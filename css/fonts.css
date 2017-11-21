@@ -5,8 +5,8 @@
 	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
 	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+	font-style:normal;
+	font-weight:normal;
 }
 /* font-family: "RobotoLight"; */
 @font-face {
@@ -15,8 +15,8 @@
 	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
 	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+	font-style:normal;
+	font-weight:normal;
 }
 /* font-family: "RobotoMedium"; */
 @font-face {
@@ -25,8 +25,8 @@
 	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
 	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+	font-style:normal;
+	font-weight:normal;
 }
 /* font-family: "RobotoBold"; */
 @font-face {
@@ -35,6 +35,17 @@
 	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
 	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+	font-style:normal;
+	font-weight:normal;
+}
+
+
+@font-face {
+	font-family:"Play-Bold";
+	src: url("../fonts/Play-Bold/Play-Bold.eot");
+	src: url("../fonts/Play-Bold/Play-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Play-Bold/Play-Bold.woff") format("woff"),
+	url("../fonts/Play-Bold/Play-Bold.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
 }

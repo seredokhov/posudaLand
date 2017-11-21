@@ -2,7 +2,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.present_box {
+		left: 50%;
+	}
+	.present_banner {
+		height: auto;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -50,5 +55,7 @@
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	.container {
+		width: 1180px;
+	}
 }
