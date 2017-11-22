@@ -1,72 +1,5 @@
 $(document).ready(function() {
 
-	//Таймер обратного отсчета
-	//Документация: http://keith-wood.name/countdown.html
-	//<div class="countdown" date-time="2015-01-07"></div>
-	var austDay = new Date($(".countdown").attr("date-time"));
-	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
-
-	//Попап менеджер FancyBox
-	//Документация: http://fancybox.net/howto
-	//<a class="fancybox"><img src="image.jpg" /></a>
-	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
-
-	//Навигация по Landing Page
-	//$(".top_mnu") - это верхняя панель со ссылками.
-	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
-
-	//Добавляет классы дочерним блокам .block для анимации
-	//Документация: http://imakewebthings.com/jquery-waypoints/
-	$(".block").waypoint(function(direction) {
-		if (direction === "down") {
-			$(".class").addClass("active");
-		} else if (direction === "up") {
-			$(".class").removeClass("deactive");
-		};
-	}, {offset: 100});
-
-	//Плавный скролл до блока .div по клику на .scroll
-	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
-			offset: -90
-		});
-	});
-
-	//Каруселька
-	//Документация: http://owlgraphic.com/owlcarousel/
-	var owl = $(".carousel");
-	owl.owlCarousel({
-		items : 4
-	});
-	owl.on("mousewheel", ".owl-wrapper", function (e) {
-		if (e.deltaY > 0) {
-			owl.trigger("owl.prev");
-		} else {
-			owl.trigger("owl.next");
-		}
-		e.preventDefault();
-	});
-	$(".next_button").click(function(){
-		owl.trigger("owl.next");
-	});
-	$(".prev_button").click(function(){
-		owl.trigger("owl.prev");
-	});
-
-	//Кнопка "Наверх"
-	//Документация:
-	//http://api.jquery.com/scrolltop/
-	//http://api.jquery.com/animate/
-	$("#top").click(function () {
-		$("body, html").animate({
-			scrollTop: 0
-		}, 800);
-		return false;
-	});
-	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("form").submit(function() {
@@ -84,3 +17,41 @@ $(document).ready(function() {
 	});
 
 });
+
+
+// Yandex Maps API
+
+ymaps.ready(init);
+var myMap;
+var myPlacemark;
+var width=document.body.clientWidth;
+
+function init(){
+	myMap = new ymaps.Map("map", {
+		center: [55.731262, 37.666036],
+		zoom: 17,
+		controls: []
+	});
+	myMap.behaviors.disable('scrollZoom');
+	if (width < 1200) {
+		myMap.behaviors.disable('drag');
+	}
+	myPlacemark = new ymaps.Placemark([55.731262, 37.666036],{}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'images/mark.png',
+		iconImageSize: [64, 90],
+		iconImageOffset: [0, -90],
+	});
+	myMap.geoObjects.add(myPlacemark);
+	if (width > 700) {
+		myMap.balloon.open(myMap.getCenter(),{
+			contentBody: '<div style="width:300px;height:85px;color:#141311;font-size:16px;line-height:22px;padding:15px 5px;">Москва, 3-й Крутицкий переулок<br> Дом 11 (ст. м. Пролетарская)<br> +7 495 642 2373</div>'
+		}, {
+			offset: [-320, -40],
+			layout: "default#imageWithContent",
+			imageHref: 'images/baloon.png',
+			imageSize: [327, 89],
+			}
+		);
+	}
+}

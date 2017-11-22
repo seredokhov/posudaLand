@@ -1,33 +1,177 @@
 /*==========  Desktop First Method  ==========*/
 
+/* Extra-Large Devices, Wide Screens */
+@media only screen and (max-width : 1550px) {
+	.feature {
+		position: static;
+		width: 300px;
+	}
+	.feature .title {
+		white-space: normal;
+	}
+	.center_image {
+		width: 100%;
+		overflow: hidden;
+	}
+	.left_panel,
+	.right_panel {
+		float: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.present {
+		flex-basis: 50%;
+	}
 	.present_box {
 		left: 50%;
 	}
 	.present_banner {
 		height: auto;
+		padding: 20px 0;
 	}
+	.radio_group_block {
+		float: none;
+	}
+	.radio_group_block .discount_cost_block {
+		position: static;
+		vertical-align: top;
+	}
+	.radio_group_block .shadow_block {
+		display: none;
+	}
+	a.more_info {
+		margin-bottom: 20px;
+	}
+	.advantages_section .advantage_list {
+
+		justify-content: space-around;
+	}
+	.present_descr {
+		padding-bottom: 30px;
+	}
+}
+@media only screen and (max-width : 1100px) {
+	.header_bottom .discount_ul_block {
+		padding: 80px 0 30px 0;
+	}
+	.header_form {
+		margin: 0 auto;
+	}
+	.left_panel, .right_panel {
+		justify-content: space-around;
+	}
+	.button_group {
+		text-align: center;
+
+	}
+	.discount_item .button_group a,
+	.advantage_list .advantage {
+		margin: 20px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.feature {
+		margin-bottom: 15px;
+	}
+	.map {
+		height: 500px;
+ 	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.present_box {
+		position: static;
+		transform: none;
+	}
+	.present_banner .row,
+	.present_banner  .row > div {
+		min-height: auto;
+	}
+	.present_box img {
+		width: 100%;
+	}
+	.contact_block {
+		display: none;
+	}
+	.header_form::before {
+		display: none;
+	}
+	.header_fade h1,
+	.header_fade h2,
+	.discount_section h2 strong,
+	.discount_section h2 {
+		font-size: 35px;
+	}
+	.advantages_section,
+	.presentation_section,
+	.present_change_section {
+		padding: 40px 0;
+	}
+	.present_descr >div.firstline,
+	.present_descr >div.secondline,
+	.present_descr >div.savedline,
+	.advantages_section h1,
+	.presentation_section h2 {
+		font-size: 30px;
+	}
+	.present_descr >div.thirtdline,
+	.present_descr >div.savedline span,
+	.advantage .description {
+		font-size: 16px;
+	}
+	.header_bottom .discount_title,
+	.advantage .title {
+		font-size: 17px;
+	}
+	.discount_item h3,
+	.feature .title {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.map {
+		height: 300px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.header_form {
+		width: 100%;
+	}
+	.header_form fieldset,
+	.header_form input[type="text"],
+	.header_form .btn_send {
+		width: 95%;
+	}
+	.header_form div {
+		font-size: 16px;
+	}
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 400px) {
+	.radio_group_block .img_block {
+		width: 260px;
+		height: 260px;
+		background-size: cover;
+	}
+	.item_1 .img_block {
+		background-position: 4px 9px;
+	}
+	.item_2 .img_block {
+		background-position: -329px 4px;
+	}
+	.item_3 .img_block {
+		background-position: -612px -18px;
+	}
 }
 
 
@@ -50,7 +194,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.upper_header {
+		width: 840px !important;
+	}
 }
 
  /* Large Devices, Wide Screens */
