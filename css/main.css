@@ -237,7 +237,7 @@ header {
 .present_box {
 	position: absolute;
 	top: 50%;
-	left: 20%;
+	left: 31%;
 	transform: translate(-50%, -50%);
 }
 .present_banner .row,
