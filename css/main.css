@@ -387,12 +387,12 @@ a.change_link,
 }
 .attention a {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: baseline;
 	border: 2px solid #e0243c;
 	color: #e0243c;
 	text-transform: uppercase;
 	height: 40px;
-	line-height: 40px;
+	line-height: 38px;
 	padding: 0 15px;
 	margin: 0 5px;
 	transition: all .2s linear;
@@ -665,7 +665,7 @@ a.more_info:hover {
 .presentation_section {
 	background: url(../images/section_bg1.jpg);
 	text-align: center;
-	/*padding-top: 135px;*/
+	background-size: 110%;
 	padding-bottom: 90px;
 	position: relative;
 }
@@ -818,3 +818,5 @@ footer {
 	padding: 25px 0;
 	text-align: center;
 }
+
+

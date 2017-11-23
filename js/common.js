@@ -93,3 +93,48 @@ $(document).ready(function() {
 jQuery(function($){
 	$("[name = phone]").mask("+9(999) 999-9999");
 });
+
+//Паралакс 
+
+$(function(){
+	var st = $(this).scrollTop();
+	var offset = $('.advantages_section').offset().top;
+	var img = $('.advantages_section');
+	var windowScroll = $(window).scrollTop();
+	
+	$(window).scroll(function(){
+		windowScroll = $(window).scrollTop();
+		if (windowScroll > offset) {
+			$('.advantages_section').css({
+				"background-position" : "center " +  (windowScroll-offset)/3 + "px"
+			})
+		}
+	});
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/*if (windowScroll > offset) {
+
+			$('.paralax').css({
+				"transform" : "translate(0%," +  20 + "%)"
+				});
+			}*/
+
+
+
