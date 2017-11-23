@@ -52,11 +52,11 @@
 				</div>
 				<div class="col-md-5">
 					<div class="form_block">
-						<form action="vk.com" class="header_form">
+						<form action="#" class="header_form">
 							<fieldset>
 								<div>Оставьте заявку</div>
-								<input type="text" id="name" placeholder="Ваше имя:">
-								<input type="text" id="phone" placeholder="Номер телефона:">
+								<input type="text" id="name" name="name" placeholder="Ваше имя:">
+								<input type="text" id="phone" name="phone" placeholder="Номер телефона:">
 								<input type="submit" class="btn_send" value="Отправить заявку">
 							</fieldset>
 						</form>
@@ -450,6 +450,13 @@
 		</div>
 	</section>
 	<section class="presentation_section">
+		<div class="container subscribe_block">
+			<form class="subscribe">
+				<label for="email" class="subscribe_title">Хотите получать полезные новости и акции, оставьте свой e-mail:
+					<input type="text" id="email">
+				</label>
+			</form>
+		</div>
 		<div class="container">
 			<h2>Чайник KitchenAid</h2>
 			<div class="left_panel">
@@ -499,6 +506,7 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery/jquery.maskedinput.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
 	<script src="js/yamap.js"></script>
 	<script src="js/common.js"></script>

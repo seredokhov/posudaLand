@@ -206,6 +206,9 @@ header {
 	padding: 0 20px;
 	color: #000000;
 }
+.header_form input[type="text"].error {
+	background: #ffd800;
+}
 .header_form .btn_send {
 	display: block;
 	width: 220px;
@@ -593,6 +596,7 @@ a.more_info {
 	text-align: center;
 	padding-top: 130px;
 	padding-bottom: 80px;
+	position: relative;
 }
 .advantages_section h1 {
 	color: #ffffff;
@@ -637,8 +641,38 @@ a.more_info {
 .presentation_section {
 	background: url(../images/section_bg1.jpg);
 	text-align: center;
-	padding-top: 135px;
+	/*padding-top: 135px;*/
 	padding-bottom: 90px;
+	position: relative;
+}
+.subscribe_block {
+	margin-bottom: 100px;
+}
+.subscribe {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: -36px;
+	z-index: 10;
+	height: 72px;
+	width: 100%;
+	background: #e0243c;
+}
+.subscribe_title {
+	font-size: 22px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.subscribe input {
+	height: 44px;
+	width: 330px;
+	line-height: 44px;
+	padding: 0 15px;
+	border:none;
+	outline: none;
+	margin-left: 5px;
 }
 .presentation_section h2 {
 	color: #141311;

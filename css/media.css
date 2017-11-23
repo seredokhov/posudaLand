@@ -53,6 +53,13 @@
 	.present_descr {
 		padding-bottom: 30px;
 	}
+	.subscribe input {
+		margin: 5px;
+	}
+	.subscribe {
+		height: 90px;
+		top: -45px;
+	}
 }
 @media only screen and (max-width : 1100px) {
 	.header_bottom .discount_ul_block {
@@ -71,6 +78,9 @@
 	.discount_item .button_group a,
 	.advantage_list .advantage {
 		margin: 20px;
+	}
+	.subscribe_block {
+		width: 100%;
 	}
 
 }
@@ -115,6 +125,9 @@
 	.present_change_section {
 		padding: 40px 0;
 	}
+	.presentation_section {
+		padding-top: 0;
+	}
 	.present_descr >div.firstline,
 	.present_descr >div.secondline,
 	.present_descr >div.savedline,
@@ -139,6 +152,18 @@
 	.map {
 		height: 300px;
 	}
+	.subscribe {
+		height: 150px;
+		padding: 10px;
+	}
+	.subscribe input {
+		width: 280px;
+		display: block;
+		margin: 10px auto;
+	}
+	.subscribe_title {
+		font-size: 17px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -153,6 +178,27 @@
 	}
 	.header_form div {
 		font-size: 16px;
+	}
+	.subscribe input {
+		width: 100%;
+	}
+	.discount_item_ul li,
+	.char_name,
+	.char {
+		display: block;
+		text-align: center;
+	}
+	.char_name {
+		background: #ccc;
+	}
+	.char {
+		background: #fff;
+	}
+	.discount_item_ul li {
+		margin-bottom: 5px;
+	}
+	.discount_item_ul .border {
+		display: none;
 	}
 }
 

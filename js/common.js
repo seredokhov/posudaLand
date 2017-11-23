@@ -1,23 +1,3 @@
-$(document).ready(function() {
-
-	//Аякс отправка форм
-	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
-		$.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: $("form").serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});
-
-});
-
 
 // Yandex Maps API
 
@@ -54,3 +34,62 @@ function init(){
 		);
 	}
 }
+
+// Валидация формы
+
+$(function(){
+	var orderBtn = $('.btn_send');
+	var form = orderBtn.parent().parent();
+	var name = $("[name = name]");
+	var phone = $("[name = phone]");
+	var re = /\+\d\(\d\d\d\) \d\d\d-\d\d\d\d/;
+
+
+	orderBtn.click(function(){
+
+		if (name.val().length >= 3 && re.test(phone.val()) ) {
+			form.submit();
+			name.removeClass('error');
+			phone.removeClass('error');
+		} else {
+			if (name.val().length < 3) {
+				name.addClass('error');
+			} else {
+				name.removeClass('error');
+			}
+			if ( !re.test(phone.val()) ) {
+				phone.addClass('error');
+			} else {
+				phone.removeClass('error');
+			}
+			return false;
+		}
+	})
+});
+
+
+
+//Аякс отправка форм
+//Документация: http://api.jquery.com/jquery.ajax/
+
+$(document).ready(function() {
+	$("form").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $("form").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+
+/* Маска */
+jQuery(function($){
+	$("[name = phone]").mask("+9(999) 999-9999");
+});
