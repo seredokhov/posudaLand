@@ -105,8 +105,13 @@ $(function(){
 	$(window).scroll(function(){
 		windowScroll = $(window).scrollTop();
 		if (windowScroll > offset) {
-			$('.advantages_section').css({
-				"background-position" : "center " +  (windowScroll-offset)/3 + "px"
+			img.css({
+				"background-position" : "center " +  (windowScroll-offset)/2 + "px"
+			})
+		}
+		else {
+			img.css({
+				"background-position" : "center " +  0 + "px"
 			})
 		}
 	});

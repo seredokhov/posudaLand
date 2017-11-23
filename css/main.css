@@ -665,7 +665,6 @@ a.more_info:hover {
 .presentation_section {
 	background: url(../images/section_bg1.jpg);
 	text-align: center;
-	background-size: 110%;
 	padding-bottom: 90px;
 	position: relative;
 }
