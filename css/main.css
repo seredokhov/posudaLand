@@ -237,7 +237,7 @@ header {
 .present_box {
 	position: absolute;
 	top: 50%;
-	left: 31%;
+	left: 20%;
 	transform: translate(-50%, -50%);
 }
 .present_banner .row,
@@ -515,6 +515,7 @@ a.change_link,
 	font-size: 18px;
 	color: #6e6d6d;
 	margin-bottom: 2px;
+	text-decoration: line-through;
 }
 .discount_cost_block .saved {
 	font-size: 18px;

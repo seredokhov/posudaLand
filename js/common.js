@@ -29,8 +29,7 @@ var width=document.body.clientWidth;
 function init(){
 	myMap = new ymaps.Map("map", {
 		center: [55.731262, 37.666036],
-		zoom: 17,
-		controls: []
+		zoom: 17
 	});
 	myMap.behaviors.disable('scrollZoom');
 	if (width < 1200) {
