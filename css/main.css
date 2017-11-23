@@ -95,8 +95,10 @@ header {
 }
 .upper_header a.call {
 	font-size: 22px;
+	height: 25px;
 	color: #e0243c;
 	text-transform: uppercase;
+	font-family: 'Play-Bold';
 }
 .upper_header a.callback {
 	font-size: 14px;
@@ -116,10 +118,12 @@ header {
 .header_fade h1 {
 	font-size: 70px;
 	color: #ffffff;
+	font-family: 'Play-Bold';
 }
 .header_fade h2 {
 	color: #e0243c;
 	font-size: 70px;
+	font-family: 'Play-Bold';
 }
 .header_fade .action_time {
 	display: block;
@@ -144,6 +148,12 @@ header {
 	display: block;
 }
 .header_bottom .discount_ul li span {
+	color: #e0243c;
+	text-decoration: underline;
+	font-size: 20px;
+	font-weight: bold;
+}
+.header_bottom .discount_ul li a {
 	color: #e0243c;
 	text-decoration: underline;
 }
@@ -181,7 +191,7 @@ header {
 	text-transform: uppercase;
 	font-size: 26px;
 	text-align: center;
-	font-family: 'RobotoBold';
+	font-family: 'Play-Bold';
 	height: 68px;
 	line-height: 68px;
 }
@@ -223,11 +233,10 @@ header {
 	transition: all .1s linear;
 
 }
-.header_form .btn_send:hover {
+.header_form .btn_send:hover,
+.discount_item .button_group a:hover,
+a.change_link:hover {
 	background: red;
-}
-.header_form .btn_send:active {
-
 }
 .present_banner {
 	background: url('../images/Present.png') no-repeat;
@@ -257,11 +266,13 @@ header {
 	color: #ffffff;
 	font-size: 40px;
 	margin-top: 40px;
+	font-family: 'Play-Bold';
 }
 .present_descr >div.secondline {
 	color: #ffd800;
 	font-size: 40px;
 	text-transform: uppercase;
+	font-family: 'Play-Bold';
 }
 .present_descr >div.thirtdline {
 	color: #ffffff;
@@ -272,6 +283,7 @@ header {
 	font-size: 60px;
 	color: #ffd800;
 	margin-top: 20px;
+	font-family: 'Play-Bold';
 }
 .present_descr >div.savedline span {
 	font-size: 40px;
@@ -287,7 +299,8 @@ header {
 .present_change_section h1 {
 	text-align: center;
 	color: #141311;
-	font-weight: 50px;
+	font-size: 50px;
+	font-family: 'Play-Bold';
 }
 
 .present_change_section h1 span {
@@ -359,6 +372,7 @@ a.change_link,
 	font-size: 20px;
 	background: #ff711c;
 	border-radius: 5px;
+	transition: all .1s linear;
 }
 .present_change_section .attention {
 	text-align: center;
@@ -396,6 +410,7 @@ a.change_link,
 	text-align: center;
 	position: relative;
 	z-index: 10;
+	font-family: 'Play-Bold';
 }
 .discount_section h2 strong {
 	color: #e0243c;
@@ -513,6 +528,7 @@ a.change_link,
 	color: #e0243c;
 	font-weight: bold;
 	height: 40px;
+	font-family: 'Play-Bold';
 }
 .discount_cost_block .old_cost {
 	font-size: 18px;
@@ -589,6 +605,9 @@ a.more_info {
 	border-radius: 5px;
 	background: linear-gradient(to top, #ff711c, #e0253c);
 }
+a.more_info:hover {
+	background: linear-gradient(to top, #e0253c, #ff711c);
+}
 .advantages_section {
 	background: url('../images/section_bg3.jpg') center 0;
 	background-size: cover;
@@ -602,6 +621,7 @@ a.more_info {
 	color: #ffffff;
 	font-size: 50px;
 	margin: 0 0 40px 0;
+	font-family: 'Play-Bold';
 }
 .advantages_section .advantage_list {
 	display: flex;
@@ -633,10 +653,14 @@ a.more_info {
 	font-weight: bold;
 	margin-bottom: 30px;
 	white-space: nowrap;
+	font-family: 'Play-Bold';
 }
 .advantage .description {
 	color: #ffffff;
 	font-size: 20px;
+}
+.advantage .description strong {
+	font-family: 'Play-Bold';
 }
 .presentation_section {
 	background: url(../images/section_bg1.jpg);
@@ -673,12 +697,16 @@ a.more_info {
 	border:none;
 	outline: none;
 	margin-left: 5px;
+	color: #000000;
+	font-weight: normal;
+	font-size: 16px;
 }
 .presentation_section h2 {
 	color: #141311;
 	font-size: 50px;
 	margin: 0 0 70px 0;
 	text-align: center;
+	font-family: 'Play-Bold';
 }
 .left_panel {
 	float: left;
@@ -690,6 +718,14 @@ a.more_info {
 }
 .center_image {
 	display: inline-block;
+	width: 599px;
+	height: 644px;
+	background: url('../images/presentation_item2.png') no-repeat;
+	font-size: 26px;
+	line-height: 30px;
+	color: #ffffff;
+	font-family: 'Play-Bold';
+	padding: 218px 274px 312px 81px;
 }
 .center_image img {
 	max-width: 100%;
