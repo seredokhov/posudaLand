@@ -14,15 +14,6 @@
 	color: #666;
 	opacity: 1;
 }
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-	
-}
-body input:required:valid,
-body textarea:required:valid {
-	
-}
 body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
@@ -392,7 +383,7 @@ a.change_link,
 	color: #e0243c;
 	text-transform: uppercase;
 	height: 40px;
-	line-height: 38px;
+	line-height: 35px;
 	padding: 0 15px;
 	margin: 0 5px;
 	transition: all .2s linear;
