@@ -260,6 +260,16 @@
 	.present_change_section {
 		padding-top: 10px;
 	}
+	.upper_header .logo {
+		width: 25%;
+	}
+	.upper_header .logo img {
+		width: 100%;
+	}
+	.upper_header a.callback {
+		font-size: 16px;
+	}
+
 
 @media only screen and (min-width : 992px) {
 	.upper_header {
