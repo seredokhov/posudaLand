@@ -266,6 +266,13 @@
 	.upper_header .logo img {
 		width: 100%;
 	}
+	.upper_header .callback_block {
+		position: relative;
+		top: -15px;
+	}
+	.upper_header a.call {
+		font-size: 20px;
+	}
 	.upper_header a.callback {
 		font-size: 16px;
 	}
