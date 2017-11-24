@@ -110,8 +110,17 @@
 	.contact_block {
 		display: none;
 	}
+	.header_form {
+		position: static;
+	}
 	.header_form::before {
-		display: none;
+		/*display: none;*/
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+	}
+	.header_bottom .form_block {
+		padding-top: 175px;
 	}
 	.header_fade h1,
 	.header_fade h2,

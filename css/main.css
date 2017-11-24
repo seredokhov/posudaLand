@@ -771,23 +771,23 @@ a.more_info:hover {
 	background: url('../images/presentation_icons.png') no-repeat;
 }
 .left_panel .feature:nth-child(1) .icon::before {
-	background-position: -11px -10px;
+	background-position: -23px -10px;
 }
 .left_panel .feature:nth-child(2) .icon::before {
-	background-position: -221px -10px;
+	background-position: -224px -10px;
 }
 .left_panel .feature:nth-child(3) .icon::before {
-	background-position: -431px -10px;
+	background-position: -423px -10px;
 }
 
 .right_panel .feature:nth-child(1) .icon::before {
-	background-position: -644px -10px;
+	background-position: -634px -10px;
 }
 .right_panel .feature:nth-child(2) .icon::before {
-	background-position: -860px -10px;
+	background-position: -832px -10px;
 }
 .right_panel .feature:nth-child(3) .icon::before {
-	background-position: -1061px -10px;
+	background-position: -1043px -10px;
 }
 .feature .title {
 	display: block;
