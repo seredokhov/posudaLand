@@ -63,6 +63,9 @@
 		left: -144px;
 		top: -47px;
 	}
+	.present_change_section {
+		padding-top: 50px;
+	}
 }
 @media only screen and (max-width : 1100px) {
 	.header_bottom .discount_ul_block {
@@ -253,6 +256,9 @@
 		display: block;
 		margin: 10px 0;
 		text-align: center;
+	}
+	.present_change_section {
+		padding-top: 10px;
 	}
 
 @media only screen and (min-width : 992px) {
