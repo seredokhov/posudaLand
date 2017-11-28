@@ -183,6 +183,9 @@
 		background-size: 100%;
 		padding: 154px 168px 204px 52px;
 	}
+	.header_fade .action_time span {
+		display: block;
+	}
 }
 @media only screen and (max-width : 480px) {
 	.header_form {
