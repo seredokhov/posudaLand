@@ -131,7 +131,7 @@ $(function(){
 
 /* Модалка */
 $(function(){
-	var link = $('a.callback');
+	var link = $('a.callback').add('.change_link').add('.more_info');
 	var modal = $('.modal');
 	var overlay = $('.overlay');
 
