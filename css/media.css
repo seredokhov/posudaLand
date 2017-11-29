@@ -31,8 +31,23 @@
 		height: auto;
 		padding: 20px 0;
 	}
+	.discount_item {
+		display: flex;
+		flex-direction: column-reverse;
+		position: relative;
+	}
+	.discount_item .col-lg-6,
+	.radio_group_block {
+		position: static;
+	}
 	.radio_group_block {
 		float: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.discount_item .img_block {
+		order: -1;
 	}
 	.radio_group_block .discount_cost_block {
 		position: static;
@@ -43,6 +58,11 @@
 	}
 	a.more_info {
 		margin-bottom: 20px;
+		position: absolute;
+		bottom: 0;
+	}
+	.discount_item_ul {
+		margin-bottom: 90px;
 	}
 	.advantages_section .advantage_list {
 
