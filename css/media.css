@@ -97,6 +97,10 @@
 	.map {
 		height: 500px;
  	}
+ 	header {
+ 		background-position: center 75px;
+ 		background-size: 1500px;
+ 	}
 }
 @media only screen and (max-width : 768px) {
 	.present_box {
