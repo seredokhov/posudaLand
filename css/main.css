@@ -817,3 +817,114 @@ footer {
 .tab.active {
 	display: block;
 }
+/*Модалка*/
+.modal {
+	display: block;
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	width: 650px;
+	height: max-content;
+	transform: translate(-50%, -50%);
+	background: #ffffff;
+	border-radius: 10px;
+	display: none;
+}
+.modal form {
+	display: block;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 35px 0 40px;
+}
+.modal label {
+	display: block;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #e0243c;
+	margin-bottom: 10px;
+	font-family: 'Play-Bold';
+}
+.modal input[type="text"] {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	background: #ffffff;
+	border: 1px solid #a2a2a2;
+	font-size: 20px;
+	color: #b2b2b2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+}
+.modal input[type="text"]:focus {
+	color: #000;
+}
+.modal input[type="text"].error {
+	border-color: red;
+}
+.overlay {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	display: none;
+	cursor: pointer;
+}
+
+.modal label.check {
+	color: #505050;
+	font-size: 16px;
+	text-transform: none;
+	display: flex;
+	cursor: pointer;
+}
+.modal .checkbox {
+	display: none;
+}
+.modal span.custom_checkbox {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #b10f0f;
+	position: relative;
+	margin-top: 4px;
+}
+.modal .checkbox:checked + .custom_checkbox::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/check.png) no-repeat center;
+}
+
+.modal .text {
+	padding-left: 10px;
+}
+.modal .text a {
+	color: #505050;
+	text-decoration: underline;
+	white-space: nowrap;
+}
+
+.modal_btn {
+	display: block;
+	width: 225px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	margin: 25px auto 0;
+	color: #ffffff;
+	font-size: 25px;
+	font-family: 'RobotoBold';
+	background: #ff711c;
+	border-radius: 10px;
+
+}

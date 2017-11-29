@@ -71,7 +71,7 @@ $(function(){
 
 //Аякс отправка форм
 //Документация: http://api.jquery.com/jquery.ajax/
-
+/*
 $(document).ready(function() {
 	$("form").submit(function() {
 		$.ajax({
@@ -88,10 +88,10 @@ $(document).ready(function() {
 	});
 
 });
-
+*/
 /* Маска */
 jQuery(function($){
-	$("[name = phone]").mask("+9(999) 999-9999");
+	$("[name = phone]").mask("+7(999) 999-9999");
 });
 
 //Паралакс 
@@ -129,4 +129,50 @@ $(function(){
 	})
 })
 
+/* Модалка */
+$(function(){
+	var link = $('a.callback');
+	var modal = $('.modal');
+	var overlay = $('.overlay');
 
+	link.click(function(){
+		overlay.fadeIn();
+		modal.fadeIn();
+		return false;
+	})
+	overlay.click(function(){
+		$(this).fadeOut();
+		modal.fadeOut();
+	})
+})
+
+// Валидация формы в модальном окне
+
+$(function(){
+	var orderBtn = $('.modal_btn');
+	var form = orderBtn.parent();
+	var name = form.find("[name = name]")
+	var phone = form.find("[name = phone]");
+	var re = /\+\d\(\d\d\d\) \d\d\d-\d\d\d\d/;
+
+
+	orderBtn.click(function(){
+		if (name.val().length >= 3 && re.test(phone.val()) ) {
+			form.submit();
+			name.removeClass('error');
+			phone.removeClass('error');
+		} else {
+			if (name.val().length < 3) {
+				name.addClass('error');
+			} else {
+				name.removeClass('error');
+			}
+			if ( !re.test(phone.val()) ) {
+				phone.addClass('error');
+			} else {
+				phone.removeClass('error');
+			}
+			return false;
+		}
+	})
+});
