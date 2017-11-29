@@ -118,28 +118,15 @@ $(function(){
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		/*if (windowScroll > offset) {
-
-			$('.paralax').css({
-				"transform" : "translate(0%," +  20 + "%)"
-				});
-			}*/
-
+/* Табы */
+$(function(){
+	var link = $('.discount_item').find('.button_group').find('a');
+	link.click(function(){
+		var index = $(this).index();
+		$(this).parent().siblings('.tab_content').find('.tab').not(':eq('+index+')').removeClass('active');
+		$(this).parent().siblings('.tab_content').find('.tab:eq(' + index + ')').addClass('active');
+		return false;
+	})
+})
 
 

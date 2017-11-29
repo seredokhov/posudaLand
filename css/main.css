@@ -593,6 +593,7 @@ a.more_info {
 	font-size: 20px;
 	border: 2px solid #ff711c;
 	margin: 0 auto;
+	margin-bottom: 30px;
 	border-radius: 5px;
 	background: linear-gradient(to top, #ff711c, #e0253c);
 }
@@ -808,5 +809,11 @@ footer {
 	padding: 25px 0;
 	text-align: center;
 }
-
-
+.tab {
+	display: none;
+	position: relative;
+	z-index: 10;
+}
+.tab.active {
+	display: block;
+}
