@@ -61,7 +61,8 @@
 		position: absolute;
 		bottom: 0;
 	}
-	.discount_item_ul {
+	.discount_item_ul,
+	.tab_content {
 		margin-bottom: 90px;
 	}
 	.advantages_section .advantage_list {
