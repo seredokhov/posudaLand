@@ -830,6 +830,7 @@ footer {
 	background: #ffffff;
 	border-radius: 10px;
 	display: none;
+	padding: 0 30px;
 }
 .modal form {
 	display: block;

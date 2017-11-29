@@ -190,6 +190,12 @@
 	.header_fade .action_time span {
 		display: block;
 	}
+	.modal {
+		width: 90%;
+	}
+	.modal .text a {
+		white-space: normal;
+	}
 }
 @media only screen and (max-width : 480px) {
 	.header_form {
