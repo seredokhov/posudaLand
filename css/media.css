@@ -49,6 +49,9 @@
 	.discount_item .img_block {
 		order: -1;
 	}
+	.discount_cost_block {
+		order: 1;
+	}
 	.radio_group_block .discount_cost_block {
 		position: static;
 		vertical-align: top;
