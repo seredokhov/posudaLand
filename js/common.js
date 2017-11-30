@@ -67,11 +67,9 @@ $(function(){
 	})
 });
 
-
-
 //Аякс отправка форм
 //Документация: http://api.jquery.com/jquery.ajax/
-/*
+
 $(document).ready(function() {
 	$("form").submit(function() {
 		$.ajax({
@@ -88,34 +86,35 @@ $(document).ready(function() {
 	});
 
 });
-*/
+
 /* Маска */
 jQuery(function($){
 	$("[name = phone]").mask("+7(999) 999-9999");
 });
 
 //Паралакс 
-
-$(function(){
-	var st = $(this).scrollTop();
-	var offset = $('.advantages_section').offset().top;
-	var img = $('.advantages_section');
-	var windowScroll = $(window).scrollTop();
-	
-	$(window).scroll(function(){
-		windowScroll = $(window).scrollTop();
-		if (windowScroll > offset) {
-			img.css({
-				"background-position" : "center " +  (windowScroll-offset)/2 + "px"
-			})
-		}
-		else {
-			img.css({
-				"background-position" : "center " +  0 + "px"
-			})
-		}
-	});
-})
+if($(document).width() > 1200) {
+	$(function(){
+		var st = $(this).scrollTop();
+		var offset = $('.advantages_section').offset().top;
+		var img = $('.advantages_section');
+		var windowScroll = $(window).scrollTop();
+		
+		$(window).scroll(function(){
+			windowScroll = $(window).scrollTop();
+			if (windowScroll > offset) {
+				img.css({
+					"background-position" : "center " +  (windowScroll-offset)/2 + "px"
+				})
+			}
+			else {
+				img.css({
+					"background-position" : "center " +  0 + "px"
+				})
+			}
+		});
+	})
+}
 
 
 /* Табы */
