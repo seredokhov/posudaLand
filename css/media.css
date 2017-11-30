@@ -98,7 +98,7 @@
 	}
 	.subscribe .email_send {
 		display: block;
-		width: 200px;
+		width: 250px;
 	}
 }
 @media only screen and (max-width : 1100px) {
@@ -205,7 +205,7 @@
 		padding: 10px;
 	}
 	.subscribe input {
-		width: 280px;
+		width: 250px;
 		display: block;
 		margin: 10px auto;
 	}
@@ -242,7 +242,8 @@
 	.header_form div {
 		font-size: 16px;
 	}
-	.subscribe input {
+	.subscribe input,
+	.subscribe .email_send{
 		width: 100%;
 	}
 	.discount_item_ul li,
