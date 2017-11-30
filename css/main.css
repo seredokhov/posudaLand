@@ -669,9 +669,10 @@ a.more_info:hover {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	top: -36px;
+	top: -50px;
 	z-index: 10;
-	height: 72px;
+	height: 100px;
+	padding: 10px;
 	width: 100%;
 	background: #e0243c;
 }
@@ -692,14 +693,18 @@ a.more_info:hover {
 	font-weight: normal;
 	font-size: 16px;
 }
+.email_block {
+	position: relative;
+}
 .subscribe .email_send {
-	display: none;
 	border-radius: 5px;
 	background: #ff711c;
 	text-align: center;
 	font-size: 20px;
 	color: #ffffff;
 	transition: all .1s linear;
+	width: auto;
+	margin: 0 auto;
 }
 .subscribe .email_send:hover {
 	background: red;
