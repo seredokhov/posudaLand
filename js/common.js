@@ -134,6 +134,7 @@ $(function(){
 	var link = $('a.callback').add('.change_link').add('.more_info');
 	var modal = $('.modal');
 	var overlay = $('.overlay');
+	var close = modal.find('.close_modal')
 
 	link.click(function(){
 		overlay.fadeIn();
@@ -142,6 +143,10 @@ $(function(){
 	})
 	overlay.click(function(){
 		$(this).fadeOut();
+		modal.fadeOut();
+	})
+	close.click(function(){
+		overlay.fadeOut();
 		modal.fadeOut();
 	})
 })
