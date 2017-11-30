@@ -669,9 +669,9 @@ a.more_info:hover {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	top: -50px;
+	top: -36px;
 	z-index: 10;
-	height: 100px;
+	height: 72px;
 	padding: 10px;
 	width: 100%;
 	background: #e0243c;
@@ -680,10 +680,11 @@ a.more_info:hover {
 	font-size: 22px;
 	color: #ffffff;
 	font-weight: bold;
+	width: 85%;
 }
 .subscribe input {
 	height: 44px;
-	width: 330px;
+	width: 250px;
 	line-height: 44px;
 	padding: 0 15px;
 	border:none;
@@ -703,7 +704,7 @@ a.more_info:hover {
 	font-size: 20px;
 	color: #ffffff;
 	transition: all .1s linear;
-	width: auto;
+	width: 15%;
 	margin: 0 auto;
 }
 .subscribe .email_send:hover {
